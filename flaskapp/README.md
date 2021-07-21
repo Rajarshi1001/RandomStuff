@@ -1,4 +1,4 @@
-### This is a simple flask app which performs basic CRUD operations on a Relational -> MYSQL.The user can register using a username and password which starts a session for that user and add, edit and delete articles.
+#### This is a simple flask app which performs basic CRUD operations on a Relational Database -> MYSQL.The user can register using a username and password which starts a session for that user and add, edit and delete articles.
 
 #### The libraries that are to be installed via pip3-
 * flask
@@ -21,11 +21,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 FLUSH PRIVILEGES;
 exit;
 ```
-### Use the password set in 
+#### Use the password set in 
 ```py
 app.config['MYSQL_PASSWORD]='your_password';
 ```
-### Creating the Database.
+#### Creating the Database.
 ```py
 CREATE DATABASE myflaskapp;
 USE myflaskapp;
