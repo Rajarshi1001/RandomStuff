@@ -7,9 +7,9 @@ if [ $NAME == "Rishi" ]
 then
     echo Hello $NAME , nice to meet ya
 else
-    echo your name is not $NAME, heheboi  
+    echo your name is not $NAME,   
 fi
-FILE="samy.txt"
+FILE="sample.txt"
 if [ -e $FILE ]
 then
     echo $FILE is a file 
@@ -25,7 +25,7 @@ case $ans in
     echo "Sorry you cant experience the Astro Club, better luck somewhere :/"
     ;;
    *)
-   echo "Please enter either yes or no , dont stay dumb :)"
+   echo "Please enter either yes or no :)"
    ;;
 esac
 FILES=$(ls *.txt)
@@ -40,4 +40,4 @@ done
 mkdir hello
 touch "hello/hw.txt"
 echo "Hello,I am Rishi" >> "hello/hw.txt"
-echo "file created xD"
+echo "file created "
