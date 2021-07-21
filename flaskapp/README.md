@@ -21,11 +21,11 @@ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password
 FLUSH PRIVILEGES;
 exit;
 ```
-### Use the password set in 
+#### Use the password set in 
 ```py
 app.config['MYSQL_PASSWORD]='your_password';
 ```
-### Creating the Database.
+#### Creating the Database.
 ```py
 CREATE DATABASE myflaskapp;
 USE myflaskapp;
