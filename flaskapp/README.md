@@ -38,7 +38,7 @@ USE myflaskapp;
 #### Database created for storing the articles for a user.
 ```py
 > CREATE TABLE articles(id INT(11) AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255),author VARCHAR(100),body TEXT, create_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
-SHOW TABLES;
+> SHOW TABLES;
 ```
 <hr>
 
