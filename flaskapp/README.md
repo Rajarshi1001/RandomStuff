@@ -18,7 +18,7 @@ In Ubuntu systems running MySQL 5.7 (and later versions), the root MySQL user is
 
 ```py
 SELECT user,authentication_string,plugin,host FROM mysqluser;
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'your_password';
 FLUSH PRIVILEGES;
 exit;
 ```
