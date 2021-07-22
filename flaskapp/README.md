@@ -14,7 +14,7 @@ $ sudo apt-get install mysql-server libmysqlclient-dev
 ```py
 $ /usr/bin/mysql -u root -p
 ```
-#### In Ubuntu systems running MySQL 5.7 (and later versions), the root MySQL user is set to authenticate using the auth_socket plugin by default rather than with a password. This allows for some greater security. In many cases,it can also complicate things when you need to allow an external program to access the user.Enter your password in 'password' to configure flask app with mysql-server.Use the commands.
+In Ubuntu systems running MySQL 5.7 (and later versions), the root MySQL user is set to authenticate using the auth_socket plugin by default rather than with a password. This allows for some greater security. In many cases,it can also complicate things when you need to allow an external program to access the user.Enter your password in 'password' to configure flask app with mysql-server.Use the commands.
 
 ```py
 SELECT user,authentication_string,plugin,host FROM mysqluser;
