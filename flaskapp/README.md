@@ -1,5 +1,6 @@
 #### This is a simple flask app which performs basic CRUD operations on a Relational Database -> MYSQL.The user can register using a username and password which starts a session for that user and add, edit and delete articles.
 <hr>
+
 #### The libraries that are to be installed via pip3-
 * flask
 * Flask_WTF
@@ -40,6 +41,7 @@ CREATE TABLE articles(id INT(11) AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255),
 SHOW TABLES;
 ```
 <hr>
+
 #### To Run the app 
 ```py
 python3 app.py 
