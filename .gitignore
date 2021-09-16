@@ -1,4 +1,4 @@
 __pycache__
 __pycache__
-/jwttoken/.env
-/jwttoken/node_modules
+**.env
+**node_modules/
