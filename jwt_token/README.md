@@ -5,13 +5,13 @@ This is a simple express app for demonstration of `json web tokens`.These tokens
 
 This application has routes: 
 
-* `__/login__` : this route creates a accesstoken and refresh token assicated with a particular user present in the posts list in `server.js`,the access token expires within every 15s so the refresh token is used to generate a new accesstoken.
+* __/login__ : this route creates a accesstoken and refresh token assicated with a particular user present in the posts list in `server.js`,the access token expires within every 15s so the refresh token is used to generate a new accesstoken.
 
-* `__/posts__`: this routes accepts the accesstoken in the Bearer section to display the post associated with that particular user.
+* __/posts__ this routes accepts the accesstoken in the Bearer section to display the post associated with that particular user.
 
-* `__/token__`: this route is used to generate a new `accesstoken` with the `refreshtoken` of the previous accesstoken since accesstoken expires every `15s`.
+* __/token__: this route is used to generate a new `accesstoken` with the `refreshtoken` of the previous accesstoken since accesstoken expires every `15s`.
 
-* `__/logout__`: this route is used to remove authentication of the user form the server by deleting the refreshtokens from the server.
+* __/logout__: this route is used to remove authentication of the user form the server by deleting the refreshtokens from the server.
 
 I have used a simple list to store the refreshtokens instead of a database.
 
