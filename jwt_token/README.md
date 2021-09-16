@@ -1,8 +1,7 @@
 ## JSON WEB TOKENS
-
 ___
 
-This is a simple express app for demonstration of json web tokens.These tokens basically enables secure transmission o finformation between the client and server as Json object.The tokens are signed using secret or using a public/private key.These tokens contains information assciated with the authorised user and is sent back to the user by the server in the Headers section of the request.
+This is a simple express app for demonstration of `json web tokens`.These tokens basically enables secure transmission o finformation between the client and server as Json object.The tokens are signed using secret or using a public/private key.These tokens contains information assciated with the authorised user and is sent back to the user by the server in the Headers section of the request.
 
 This application has routes: 
 
@@ -20,14 +19,22 @@ The authentication of the tokens are executed on `localhost:5000`
 The post retrieval (`get request`) is executed on `localhost:3000` 
 
 All the dependencies are stored in `package.json` file.
-To install them:
+
+The relevant `npm dependencies` include:
+- jsonwebtoken
+- express
+- dotenv
+- crypto
+- nodemon
+
+To install the dependencies, run the following command in the terminal:
 ```
 npm install
 ```
-To start the servers:
+To start the servers, run the following commands in two seperate terminals:
 ```
 npm run devStart
 npm run devStart2
 ```
-
-I have used the Rest Client for passing on http requests to the endpoints.
+I have used the Rest Client extension in VSCode for passing on multiple http requests to the endpoints.
+The requests are present in the `response.rest` file.
