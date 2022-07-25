@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Node App</title>
+</head>
+
+<body>
+  <h1>My Node App</h1>
+  <form method="post" action="/item/add">
+    <label for="firstname">firstname</label>
+    <input type="text" name="firstname">
+    <label for="lastname">lastname</label>
+    <input type="text" name="lastname">
+    <input type="submit" value="Add">
+  </form>
+  <h4>Names:</h4>
+  <ul>
+    <% users.forEach(function(user) { %>
+      <li>
+        <%= user.firstname %>
+        <%= user.lastname %>
+      </li>
+      <% }); %>
+  </ul>
+</body>
+
+</html>
